@@ -88,7 +88,8 @@ def edit_entry(request, entry_id):
     return render(request, 'learning_logs/edit_entry.html', context)
 
 def custom_404(request, exception=None):
-    return render(request, '../learning_log/templates/404.html', status=404)
+    return render(request, 'learning_logs/404.html', status=404)
 
 def custom_500(request):
-    return render(request, '../learning_log/templates/500.html', status=500)
+    return render(request, 'learning_logs/500.html', status=500)
+
